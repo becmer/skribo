@@ -32,6 +32,7 @@ pub(crate) struct LayoutFragment {
 //
 // Discussion topic: this is so similar to hb_glyph_info_t, maybe we
 // should just use that.
+#[allow(unused)]
 pub(crate) struct FragmentGlyph {
     pub cluster: u32,
     pub glyph_id: u32,
@@ -218,6 +219,7 @@ pub(crate) fn get_script_run(text: &str) -> (hb_script_t, usize) {
     }
 }
 
+#[allow(unused)]
 fn debug_script_runs(text: &str) {
     let mut text_substr = text;
     while !text_substr.is_empty() {
